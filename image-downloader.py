@@ -50,7 +50,7 @@ def download_csv_row_images(row, dest_dir):
         start_url = row['web-scraper-start-url']
         id = row['web-scraper-order']
 
-        if key.endswith("-src"):
+        if key.endswith("-href"):
             image_url = row[key]
             image_url = urljoin(start_url, image_url)
 
